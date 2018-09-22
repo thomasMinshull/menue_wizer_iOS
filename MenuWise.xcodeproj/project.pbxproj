@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E3F78ABB915A2664B7B2BDE /* Pods_MenuWiseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E182C913A60AA2C5DA9F05B2 /* Pods_MenuWiseTests.framework */; };
+		550D8AEB2156BB3300DAEE74 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550D8AEA2156BB3300DAEE74 /* ARViewController.swift */; };
+		550D8AED2156BB4200DAEE74 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550D8AEC2156BB4200DAEE74 /* ProfileViewController.swift */; };
+		550D8AEF2156BB4D00DAEE74 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550D8AEE2156BB4D00DAEE74 /* MapViewController.swift */; };
+		551A12432156DA710069EAE8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551A12422156DA710069EAE8 /* NetworkManager.swift */; };
+		551A12472156E2BE0069EAE8 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551A12462156E2BE0069EAE8 /* Validation.swift */; };
 		5545F33121569CBE00262792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5545F33021569CBE00262792 /* AppDelegate.swift */; };
-		5545F33321569CBE00262792 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5545F33221569CBE00262792 /* ViewController.swift */; };
 		5545F33621569CBE00262792 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5545F33421569CBE00262792 /* Main.storyboard */; };
 		5545F33821569CC000262792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5545F33721569CC000262792 /* Assets.xcassets */; };
 		5545F33B21569CC000262792 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5545F33921569CC000262792 /* LaunchScreen.storyboard */; };
 		5545F34621569CC000262792 /* MenuWiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5545F34521569CC000262792 /* MenuWiseTests.swift */; };
+		A1816990CAC13798AA7496F4 /* Pods_MenuWise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE06C82CAEECEBD2F792AEF4 /* Pods_MenuWise.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +32,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		550D8AEA2156BB3300DAEE74 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		550D8AEC2156BB4200DAEE74 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		550D8AEE2156BB4D00DAEE74 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		551A12422156DA710069EAE8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		551A12462156E2BE0069EAE8 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		5545F32D21569CBE00262792 /* MenuWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5545F33021569CBE00262792 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5545F33221569CBE00262792 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5545F33521569CBE00262792 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5545F33721569CC000262792 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5545F33A21569CC000262792 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +46,12 @@
 		5545F34121569CC000262792 /* MenuWiseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuWiseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5545F34521569CC000262792 /* MenuWiseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuWiseTests.swift; sourceTree = "<group>"; };
 		5545F34721569CC000262792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6004E485997924CD85E614FA /* Pods-MenuWise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuWise.release.xcconfig"; path = "Pods/Target Support Files/Pods-MenuWise/Pods-MenuWise.release.xcconfig"; sourceTree = "<group>"; };
+		60EB56BD550DE25E08640A42 /* Pods-MenuWiseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuWiseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MenuWiseTests/Pods-MenuWiseTests.release.xcconfig"; sourceTree = "<group>"; };
+		6546BA1B58B91367320E74D4 /* Pods-MenuWise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuWise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MenuWise/Pods-MenuWise.debug.xcconfig"; sourceTree = "<group>"; };
+		DA9AA355EC6EDA337B3074C4 /* Pods-MenuWiseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuWiseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MenuWiseTests/Pods-MenuWiseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE06C82CAEECEBD2F792AEF4 /* Pods_MenuWise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MenuWise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E182C913A60AA2C5DA9F05B2 /* Pods_MenuWiseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MenuWiseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1816990CAC13798AA7496F4 /* Pods_MenuWise.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +67,57 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E3F78ABB915A2664B7B2BDE /* Pods_MenuWiseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		550D8AE62156BACF00DAEE74 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5545F33421569CBE00262792 /* Main.storyboard */,
+				5545F33921569CC000262792 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		550D8AE72156BAE300DAEE74 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				550D8AE62156BACF00DAEE74 /* Storyboards */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		550D8AE82156BAEF00DAEE74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				551A12422156DA710069EAE8 /* NetworkManager.swift */,
+				551A12462156E2BE0069EAE8 /* Validation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		550D8AE92156BAF700DAEE74 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				550D8AEA2156BB3300DAEE74 /* ARViewController.swift */,
+				550D8AEC2156BB4200DAEE74 /* ProfileViewController.swift */,
+				550D8AEE2156BB4D00DAEE74 /* MapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		5545F32421569CBE00262792 = {
 			isa = PBXGroup;
 			children = (
 				5545F32F21569CBE00262792 /* MenuWise */,
 				5545F34421569CC000262792 /* MenuWiseTests */,
 				5545F32E21569CBE00262792 /* Products */,
+				883DBC76E54883FA97D0D778 /* Pods */,
+				6D4C9718BD63E853BB8BFDCE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,10 +134,10 @@
 			isa = PBXGroup;
 			children = (
 				5545F33021569CBE00262792 /* AppDelegate.swift */,
-				5545F33221569CBE00262792 /* ViewController.swift */,
-				5545F33421569CBE00262792 /* Main.storyboard */,
+				550D8AE92156BAF700DAEE74 /* Controller */,
+				550D8AE82156BAEF00DAEE74 /* Model */,
+				550D8AE72156BAE300DAEE74 /* View */,
 				5545F33721569CC000262792 /* Assets.xcassets */,
-				5545F33921569CC000262792 /* LaunchScreen.storyboard */,
 				5545F33C21569CC000262792 /* Info.plist */,
 			);
 			path = MenuWise;
@@ -96,6 +152,26 @@
 			path = MenuWiseTests;
 			sourceTree = "<group>";
 		};
+		6D4C9718BD63E853BB8BFDCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE06C82CAEECEBD2F792AEF4 /* Pods_MenuWise.framework */,
+				E182C913A60AA2C5DA9F05B2 /* Pods_MenuWiseTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		883DBC76E54883FA97D0D778 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6546BA1B58B91367320E74D4 /* Pods-MenuWise.debug.xcconfig */,
+				6004E485997924CD85E614FA /* Pods-MenuWise.release.xcconfig */,
+				DA9AA355EC6EDA337B3074C4 /* Pods-MenuWiseTests.debug.xcconfig */,
+				60EB56BD550DE25E08640A42 /* Pods-MenuWiseTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5545F34A21569CC000262792 /* Build configuration list for PBXNativeTarget "MenuWise" */;
 			buildPhases = (
+				5985A949BD4083159703D6A8 /* [CP] Check Pods Manifest.lock */,
 				5545F32921569CBE00262792 /* Sources */,
 				5545F32A21569CBE00262792 /* Frameworks */,
 				5545F32B21569CBE00262792 /* Resources */,
+				7546B09290FDA65C44209151 /* [CP] Embed Pods Frameworks */,
+				DAE294BEDF31CB0A1E3B6956 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5545F34D21569CC000262792 /* Build configuration list for PBXNativeTarget "MenuWiseTests" */;
 			buildPhases = (
+				1667080AF2D01DB504A5E57F /* [CP] Check Pods Manifest.lock */,
 				5545F33D21569CC000262792 /* Sources */,
 				5545F33E21569CC000262792 /* Frameworks */,
 				5545F33F21569CC000262792 /* Resources */,
+				6D848521D7D90B6D1528D7D0 /* [CP] Embed Pods Frameworks */,
+				7AFD445A3C375BD709E6B135 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,13 +274,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1667080AF2D01DB504A5E57F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MenuWiseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5985A949BD4083159703D6A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MenuWise-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D848521D7D90B6D1528D7D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MenuWiseTests/Pods-MenuWiseTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7546B09290FDA65C44209151 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MenuWise/Pods-MenuWise-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MenuWise/Pods-MenuWise-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AFD445A3C375BD709E6B135 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MenuWiseTests/Pods-MenuWiseTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAE294BEDF31CB0A1E3B6956 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MenuWise/Pods-MenuWise-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5545F32921569CBE00262792 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5545F33321569CBE00262792 /* ViewController.swift in Sources */,
+				550D8AED2156BB4200DAEE74 /* ProfileViewController.swift in Sources */,
 				5545F33121569CBE00262792 /* AppDelegate.swift in Sources */,
+				551A12432156DA710069EAE8 /* NetworkManager.swift in Sources */,
+				550D8AEB2156BB3300DAEE74 /* ARViewController.swift in Sources */,
+				551A12472156E2BE0069EAE8 /* Validation.swift in Sources */,
+				550D8AEF2156BB4D00DAEE74 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,11 +546,13 @@
 		};
 		5545F34B21569CC000262792 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6546BA1B58B91367320E74D4 /* Pods-MenuWise.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FHZ72ELYQ2;
 				INFOPLIST_FILE = MenuWise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,11 +566,13 @@
 		};
 		5545F34C21569CC000262792 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6004E485997924CD85E614FA /* Pods-MenuWise.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FHZ72ELYQ2;
 				INFOPLIST_FILE = MenuWise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,6 +586,7 @@
 		};
 		5545F34E21569CC000262792 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA9AA355EC6EDA337B3074C4 /* Pods-MenuWiseTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -413,6 +608,7 @@
 		};
 		5545F34F21569CC000262792 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60EB56BD550DE25E08640A42 /* Pods-MenuWiseTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
