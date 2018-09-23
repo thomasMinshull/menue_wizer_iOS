@@ -5,7 +5,10 @@
   },
   "resources" : [
     {
-      "filename" : "oceanWisePhoto.arreferenceimage"
+      "filename" : "MealWiseLogo.arreferenceimage"
+    },
+    {
+      "filename" : "oceanWiseLogo.arreferenceimage"
     }
   ]
 }

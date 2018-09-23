@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "oceanWisePhoto 2.24.26 PM.png"
+      "filename" : "oceanWiseLogo.jpg"
     }
   ],
   "info" : {
@@ -10,6 +10,7 @@
     "author" : "xcode"
   },
   "properties" : {
-    "width" : 2
+    "width" : 300,
+    "unit" : "centimeters"
   }
 }
