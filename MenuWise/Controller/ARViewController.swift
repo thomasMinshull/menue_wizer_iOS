@@ -97,18 +97,18 @@ extension ARViewController: ARSCNViewDelegate {
                 print("Ocean WISE!!!")
                 if let location = location {
                     networkManager.validateOceanWiseLogo(location: location) { [weak self] (success) in
+                        let identifer = true ? SegueIDs.newFishSegue : SegueIDs.invalidLogoSegue
+                        self?.performSegue(withIdentifier: identifer, sender: nil)
                     }
-                    let identifer = true ? SegueIDs.newFishSegue : SegueIDs.invalidLogoSegue
-                    performSegue(withIdentifier: identifer, sender: nil)
                 }
             } else if imageAnchor.referenceImage == mealWiseRef {
                 print("Meal Share")
                 let location = CLLocation(latitude: 0.00, longitude: 0.00)
                     
                 networkManager.validateOceanWiseLogo(location: location) { [weak self] (success) in
+                    let identifer = false ? SegueIDs.newFishSegue : SegueIDs.invalidLogoSegue
+                    self?.performSegue(withIdentifier: identifer, sender: nil)
                 }
-                let identifer = false ? SegueIDs.newFishSegue : SegueIDs.invalidLogoSegue
-                performSegue(withIdentifier: identifer, sender: nil)
             }
         }
         return node

@@ -58,14 +58,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxh-tg-utD">
-                                <rect key="frame" x="164" y="366" width="47" height="30"/>
+                                <rect key="frame" x="164" y="363.5" width="47" height="30"/>
                                 <state key="normal" title="Report"/>
                                 <connections>
                                     <action selector="ReportButtonTapped:" destination="1Uu-Qj-hO0" eventType="touchUpInside" id="wBq-HG-5mo"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This Logo looks suspicious. Would you like to report it?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haU-TA-0cf">
-                                <rect key="frame" x="62.5" y="256.5" width="250" height="87"/>
+                                <rect key="frame" x="62.5" y="254" width="250" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="87" id="ySf-Sv-BKV"/>
                                 </constraints>
@@ -101,7 +101,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2wJ-HA-o6J">
-                                <rect key="frame" x="0.0" y="-14.5" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="7.5" width="375" height="667"/>
                             </arscnView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ttz-aO-7jn">
                                 <rect key="frame" x="169" y="315" width="37" height="37"/>
@@ -141,8 +141,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="nlP-Dd-GCu" kind="relationship" relationship="viewControllers" id="TnC-sL-xrw"/>
                         <segue destination="UDY-am-5Xt" kind="relationship" relationship="viewControllers" id="s0A-TA-qsE"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="USA-5d-2Gq"/>
                         <segue destination="vnf-zV-i6Y" kind="relationship" relationship="viewControllers" id="f9n-Zi-SXo"/>
                     </connections>
                 </tabBarController>
@@ -457,7 +457,4 @@
         <image name="trout" width="300" height="107"/>
         <image name="wahoo" width="350" height="222"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="USA-5d-2Gq"/>
-    </inferredMetricsTieBreakers>
 </document>
