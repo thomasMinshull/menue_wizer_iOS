@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "mealwise_loading_160.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Mealwise Logo.png",
       "scale" : "2x"
     },
     {
