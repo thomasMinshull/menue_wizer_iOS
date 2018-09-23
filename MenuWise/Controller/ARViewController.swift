@@ -98,7 +98,9 @@ extension ARViewController: ARSCNViewDelegate {
                 if let location = location {
                     networkManager.validateOceanWiseLogo(location: location) { [weak self] (success) in
                         let identifer = true ? SegueIDs.newFishSegue : SegueIDs.invalidLogoSegue
-                        self?.performSegue(withIdentifier: identifer, sender: nil)
+                        DispatchQueue.main.async {
+                            self?.performSegue(withIdentifier: identifer, sender: nil)
+                        }
                     }
                 }
             } else if imageAnchor.referenceImage == mealWiseRef {
@@ -107,7 +109,9 @@ extension ARViewController: ARSCNViewDelegate {
                     
                 networkManager.validateOceanWiseLogo(location: location) { [weak self] (success) in
                     let identifer = false ? SegueIDs.newFishSegue : SegueIDs.invalidLogoSegue
-                    self?.performSegue(withIdentifier: identifer, sender: nil)
+                    DispatchQueue.main.async {
+                        self?.performSegue(withIdentifier: identifer, sender: nil)
+                    }
                 }
             }
         }
