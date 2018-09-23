@@ -25,6 +25,89 @@
             </objects>
             <point key="canvasLocation" x="1079" y="-553"/>
         </scene>
+        <!--New Species View Controller-->
+        <scene sceneID="sni-kl-Igq">
+            <objects>
+                <viewController id="2P2-Pb-AXT" customClass="NewSpeciesViewController" customModule="MenuWise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="92a-2q-gNA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="char" translatesAutoresizingMaskIntoConstraints="NO" id="xSV-w4-8fg">
+                                <rect key="frame" x="67" y="134" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SbH-B3-4Hu">
+                                <rect key="frame" x="152" y="299" width="70" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have earned a new speicies!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M59-Mf-vna">
+                                <rect key="frame" x="63" y="58" width="249" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.60784313725490191" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xvx-Cd-nZr">
+                                <rect key="frame" x="164" y="444" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="ViewDetails:" destination="2P2-Pb-AXT" eventType="touchUpInside" id="duq-g3-faZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="n1E-9p-EIr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ozQ-hf-8hU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1991" y="48"/>
+        </scene>
+        <!--Invalid Logo View Controller-->
+        <scene sceneID="YJg-Dj-NOp">
+            <objects>
+                <viewController id="1Uu-Qj-hO0" customClass="InvalidLogoViewController" customModule="MenuWise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VHi-84-02q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxh-tg-utD">
+                                <rect key="frame" x="164" y="366" width="47" height="30"/>
+                                <state key="normal" title="Report"/>
+                                <connections>
+                                    <action selector="ReportButtonTapped:" destination="1Uu-Qj-hO0" eventType="touchUpInside" id="wBq-HG-5mo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This Logo looks suspicious. Would you like to report it?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haU-TA-0cf">
+                                <rect key="frame" x="62.5" y="256.5" width="250" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="ySf-Sv-BKV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="haU-TA-0cf" firstAttribute="width" secondItem="VHi-84-02q" secondAttribute="width" multiplier="2:3" id="FQ0-2d-j0L"/>
+                            <constraint firstItem="bxh-tg-utD" firstAttribute="centerX" secondItem="haU-TA-0cf" secondAttribute="centerX" id="Hil-oQ-S7E"/>
+                            <constraint firstItem="haU-TA-0cf" firstAttribute="centerX" secondItem="Gb0-1i-dyp" secondAttribute="centerX" id="MSk-fd-291"/>
+                            <constraint firstItem="bxh-tg-utD" firstAttribute="top" secondItem="haU-TA-0cf" secondAttribute="bottom" constant="22.5" id="W8A-qk-JOO"/>
+                            <constraint firstItem="Gb0-1i-dyp" firstAttribute="centerY" secondItem="haU-TA-0cf" secondAttribute="bottom" id="qON-dg-uWv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gb0-1i-dyp"/>
+                    </view>
+                    <connections>
+                        <outlet property="textLabel" destination="haU-TA-0cf" id="68l-QG-Sw3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bnk-Yj-IKH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1989.5999999999999" y="750.67466266866575"/>
+        </scene>
         <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -55,6 +138,8 @@
                     <connections>
                         <outlet property="activityIndicator" destination="ttz-aO-7jn" id="LT8-Yh-gSG"/>
                         <outlet property="arscene" destination="2wJ-HA-o6J" id="3Ah-la-LhZ"/>
+                        <segue destination="2P2-Pb-AXT" kind="show" identifier="NewFishSegue" id="IZR-9L-R4l"/>
+                        <segue destination="1Uu-Qj-hO0" kind="show" id="GjV-uT-hoG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -98,4 +183,7 @@
             <point key="canvasLocation" x="1079" y="-1235"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="char" width="500" height="325"/>
+    </resources>
 </document>

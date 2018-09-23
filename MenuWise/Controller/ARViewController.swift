@@ -12,6 +12,11 @@ import SceneKit
 import CoreLocation
 
 class ARViewController: UIViewController {
+    private struct SegueIDs {
+        let static newFishSegue = "NewFishSegue"
+        let static 
+    }
+    
     @IBOutlet var arscene: ARSCNView!
     let networkManager = NetworkManager()
     let locationManager = CLLocationManager()
