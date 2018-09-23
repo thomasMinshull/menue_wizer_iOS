@@ -8,14 +8,28 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
-
+class ProfileViewController: UIViewController, UICollectionViewDataSource {
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        collectionView.dataSource = self
     }
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 8
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let identifiers = ["Trout","Redfish","Octopus","Lionfish","Scallop","Wahoo","Swordfish","Spearfish"]
+        
+
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifiers[indexPath.row], for: indexPath)
+        return cell
+    }
+    
+
 
     /*
     // MARK: - Navigation
