@@ -14,6 +14,7 @@ import CoreLocation
 class ARViewController: UIViewController {
     private struct SegueIDs {
         static let newFishSegue = "NewFishSegue"
+        static let invalidLogoSegue = "invalidLogoSegue"
     }
     
     @IBOutlet var arscene: ARSCNView!
@@ -24,10 +25,11 @@ class ARViewController: UIViewController {
     var location: CLLocation?
     
     private var trackingImages = Set<ARReferenceImage>()
-    let oceanWiseLogo = UIImage(named: "oceanWisePhoto")!
-//    let mealShare = UIImage(named: "mealShare")!
+    let oceanWiseLogo = UIImage(named: "oceanWiseLogo")!
+    let mealShare = UIImage(named: "MealWiseLogo")!
     
     var oceanWiseRef: ARReferenceImage!
+    var mealWiseRef: ARReferenceImage!
     var logos: Set<ARReferenceImage>!
     
     var configuration: ARImageTrackingConfiguration {
@@ -38,7 +40,7 @@ class ARViewController: UIViewController {
     }
     
 //    let mealShareRef = ARReferenceImage(mealShare, orientation: .up, physicalWidth: 5.0)
-   // let logos = ARReferenceImage.referenceImages(inGroupNamed: "logos", bundle: nil)!
+//    let logos = ARReferenceImage.referenceImages(inGroupNamed: "logos", bundle: nil)!
     var oceanWiseNode: SCNNode?
     
     override func viewDidLoad() {
@@ -56,7 +58,8 @@ class ARViewController: UIViewController {
         arscene.scene = SCNScene()
         
         oceanWiseRef = ARReferenceImage(oceanWiseLogo.cgImage!, orientation: .up, physicalWidth: 5.0)
-        logos = Set(arrayLiteral: oceanWiseRef)
+        mealWiseRef = ARReferenceImage(mealShare.cgImage!, orientation: .up, physicalWidth: 5.0)
+        logos = Set(arrayLiteral: oceanWiseRef, mealWiseRef)
          self.arscene.session.run(configuration)
     }
     
@@ -89,22 +92,23 @@ extension ARViewController: ARSCNViewDelegate {
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
         let node = SCNNode()
         
-        
-        
         if let imageAnchor = anchor as? ARImageAnchor {
             if imageAnchor.referenceImage == oceanWiseRef {
                 print("Ocean WISE!!!")
                 if let location = location {
                     networkManager.validateOceanWiseLogo(location: location) { [weak self] (success) in
-                        let title = success ? "You're AWSOME" : "Wow there. That's Not ligit!"
-                        let message = success ? "Saving the world one fish tacco at a time!" : "We've already started filing an investigation. Thank you for helping to identify ocean ignorance."
-                        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-                        let action = UIAlertAction(title: "OK", style: .default)
-                        
-                        alertController.addAction(action)
-                        self?.present(alertController, animated: true)
                     }
+                    let identifer = true ? SegueIDs.newFishSegue : SegueIDs.invalidLogoSegue
+                    performSegue(withIdentifier: identifer, sender: nil)
                 }
+            } else if imageAnchor.referenceImage == mealWiseRef {
+                print("Meal Share")
+                let location = CLLocation(latitude: 0.00, longitude: 0.00)
+                    
+                networkManager.validateOceanWiseLogo(location: location) { [weak self] (success) in
+                }
+                let identifer = false ? SegueIDs.newFishSegue : SegueIDs.invalidLogoSegue
+                performSegue(withIdentifier: identifer, sender: nil)
             }
         }
         return node

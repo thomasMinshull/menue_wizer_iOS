@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vnf-zV-i6Y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.14" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LDA-vE-lcI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -63,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozQ-hf-8hU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1991" y="48"/>
+            <point key="canvasLocation" x="2928.8000000000002" y="47.226386806596707"/>
         </scene>
         <!--Invalid Logo View Controller-->
         <scene sceneID="YJg-Dj-NOp">
@@ -74,14 +74,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxh-tg-utD">
-                                <rect key="frame" x="164" y="366" width="47" height="30"/>
+                                <rect key="frame" x="164" y="363.5" width="47" height="30"/>
                                 <state key="normal" title="Report"/>
                                 <connections>
                                     <action selector="ReportButtonTapped:" destination="1Uu-Qj-hO0" eventType="touchUpInside" id="wBq-HG-5mo"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This Logo looks suspicious. Would you like to report it?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haU-TA-0cf">
-                                <rect key="frame" x="62.5" y="256.5" width="250" height="87"/>
+                                <rect key="frame" x="62.5" y="254" width="250" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="87" id="ySf-Sv-BKV"/>
                                 </constraints>
@@ -106,9 +106,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bnk-Yj-IKH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1989.5999999999999" y="750.67466266866575"/>
+            <point key="canvasLocation" x="2928.8000000000002" y="750.67466266866575"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ARViewController" customModule="MenuWise" customModuleProvider="target" sceneMemberID="viewController">
@@ -117,7 +117,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2wJ-HA-o6J">
-                                <rect key="frame" x="0.0" y="-14.5" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="7.5" width="375" height="667"/>
                             </arscnView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ttz-aO-7jn">
                                 <rect key="frame" x="169" y="315" width="37" height="37"/>
@@ -134,17 +134,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Ddt-1T-nxp"/>
+                    <navigationItem key="navigationItem" id="Lxa-8R-R1y"/>
                     <connections>
                         <outlet property="activityIndicator" destination="ttz-aO-7jn" id="LT8-Yh-gSG"/>
                         <outlet property="arscene" destination="2wJ-HA-o6J" id="3Ah-la-LhZ"/>
                         <segue destination="2P2-Pb-AXT" kind="show" identifier="NewFishSegue" id="IZR-9L-R4l"/>
-                        <segue destination="1Uu-Qj-hO0" kind="show" id="GjV-uT-hoG"/>
+                        <segue destination="1Uu-Qj-hO0" kind="show" identifier="invalidLogoSegue" id="GjV-uT-hoG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1078" y="275"/>
+            <point key="canvasLocation" x="2016.8" y="274.81259370314842"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="qmP-hQ-cv4">
@@ -157,7 +157,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="USA-5d-2Gq"/>
+                        <segue destination="nlP-Dd-GCu" kind="relationship" relationship="viewControllers" id="USA-5d-2Gq"/>
                         <segue destination="Rg8-8Z-W5I" kind="relationship" relationship="viewControllers" id="OIg-Ad-f85"/>
                         <segue destination="UDY-am-5Xt" kind="relationship" relationship="viewControllers" id="s0A-TA-qsE"/>
                     </connections>
@@ -346,6 +346,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bn-2Z-hTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1924" y="-1299.400299850075"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="VBh-rE-IAb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nlP-Dd-GCu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Ddt-1T-nxp"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R4P-JK-EJk">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ThQ-4i-jxZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EXw-PF-CrJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077.5999999999999" y="274.81259370314842"/>
         </scene>
     </scenes>
     <resources>
