@@ -13,8 +13,7 @@ import CoreLocation
 
 class ARViewController: UIViewController {
     private struct SegueIDs {
-        let static newFishSegue = "NewFishSegue"
-        let static 
+        static let newFishSegue = "NewFishSegue"
     }
     
     @IBOutlet var arscene: ARSCNView!
