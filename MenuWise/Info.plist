@@ -43,5 +43,7 @@
 	</array>
     <key>NSCameraUsageDescription</key>
     <string>MenuWise requires access to your phone’s camera to identify menue items.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Menue Wise requires needs to know your location to verify that restaurents are part of the ocean wise program.</string>
 </dict>
 </plist>

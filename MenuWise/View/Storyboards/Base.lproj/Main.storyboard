@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -35,26 +34,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2wJ-HA-o6J">
-                                <rect key="frame" x="0.0" y="152.5" width="375" height="333.5"/>
+                                <rect key="frame" x="0.0" y="-14.5" width="375" height="667"/>
                             </arscnView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ttz-aO-7jn">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2wJ-HA-o6J" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="7h3-N0-vgM"/>
-                            <constraint firstItem="2wJ-HA-o6J" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:2" id="SqH-3c-ffG"/>
+                            <constraint firstItem="2wJ-HA-o6J" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="SqH-3c-ffG"/>
                             <constraint firstItem="2wJ-HA-o6J" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bfS-8G-ARg"/>
                             <constraint firstItem="2wJ-HA-o6J" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="jDO-Ux-NlY"/>
+                            <constraint firstItem="ttz-aO-7jn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nNf-FN-QVf"/>
+                            <constraint firstItem="ttz-aO-7jn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rwe-cO-V2Z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Ddt-1T-nxp"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="ttz-aO-7jn" id="LT8-Yh-gSG"/>
                         <outlet property="arscene" destination="2wJ-HA-o6J" id="3Ah-la-LhZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1079.2" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1078" y="275"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="qmP-hQ-cv4">
@@ -62,6 +67,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="LDA-vE-lcI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vh5-oc-uwB">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

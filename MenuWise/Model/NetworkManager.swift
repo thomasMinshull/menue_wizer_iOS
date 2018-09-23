@@ -7,16 +7,20 @@
 //
 
 import UIKit
+import CoreLocation
 
 class NetworkManager: NSObject {
     
     let defaultSession = URLSession(configuration: .default)
     var dataTask: URLSessionDataTask?
     
-    func validateOceanWiseLogo(lat: Double, lon: Double, completion: @escaping (Bool) -> ()) {
+    func validateOceanWiseLogo(location: CLLocation, completion: @escaping (Bool) -> ()) {
         dataTask?.cancel()
         
-        var urlComponents = URLComponents(string: "https://itunes.apple.com/search")!
+        let lat = location.coordinate.latitude
+        let lon = location.coordinate.longitude
+        
+        var urlComponents = URLComponents(string: "https://us-central1-meal-wise.cloudfunctions.net/checkPlace")!
         urlComponents.query = "lat=\(lat)&lon=\(lon)"
         
         guard let url = urlComponents.url else {
@@ -26,6 +30,7 @@ class NetworkManager: NSObject {
         dataTask = defaultSession.dataTask(with: url, completionHandler: {  (data, response, error) in
             guard let data = data else {
                 print("Data unable to be unwrapped when validating Ocean Wise Logo. Response: \(String(describing: response)) Error: \(String(describing: error))")
+                completion(false)
                 return
             }
             
