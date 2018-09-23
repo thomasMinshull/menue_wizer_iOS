@@ -37,7 +37,7 @@ class NetworkManager: NSObject {
             let jsonDecoder = JSONDecoder()
             let validator = try? jsonDecoder.decode(Validation.self, from: data)
             
-            guard let valid = validator?.valid else {
+            guard let valid = validator?.authorized else {
                 print("Unable to deserialize json while validation Ocan Wise Logo.")
                 return
             }

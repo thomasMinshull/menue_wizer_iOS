@@ -191,17 +191,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ro-gy-wWJ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                                <rect key="frame" x="0.0" y="0.0" width="212" height="192"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Oval" translatesAutoresizingMaskIntoConstraints="NO" id="fNr-am-d59">
-                                        <rect key="frame" x="175" y="10" width="188" height="192"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Carrie Meyer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLK-lf-6k4">
                                         <rect key="frame" x="36" y="57" width="148" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -225,10 +216,6 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="fNr-am-d59" firstAttribute="leading" secondItem="3ro-gy-wWJ" secondAttribute="leading" constant="175" id="Tog-58-gOw"/>
-                                    <constraint firstItem="fNr-am-d59" firstAttribute="top" secondItem="3ro-gy-wWJ" secondAttribute="top" constant="10" id="t3J-Gk-D7C"/>
-                                </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YtO-O8-AUN">
                                 <rect key="frame" x="30" y="249" width="315" height="330"/>
@@ -330,18 +317,27 @@
                                 <rect key="frame" x="30" y="200" width="315" height="1"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Oval" translatesAutoresizingMaskIntoConstraints="NO" id="fNr-am-d59">
+                                <rect key="frame" x="206" y="9" width="153" height="192"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="YtO-O8-AUN" firstAttribute="trailing" secondItem="K8g-0x-4Sk" secondAttribute="trailing" constant="-30" id="8BY-jd-9Zv"/>
                             <constraint firstItem="YtO-O8-AUN" firstAttribute="leading" secondItem="K8g-0x-4Sk" secondAttribute="leading" constant="30" id="AKI-x3-KSn"/>
-                            <constraint firstItem="fNr-am-d59" firstAttribute="height" secondItem="buA-Nc-0g3" secondAttribute="height" id="GwP-Xe-eP1"/>
+                            <constraint firstItem="fNr-am-d59" firstAttribute="leading" secondItem="buA-Nc-0g3" secondAttribute="leading" constant="235" id="KUQ-ht-Koo"/>
                             <constraint firstItem="zWs-2d-5UM" firstAttribute="trailing" secondItem="K8g-0x-4Sk" secondAttribute="trailing" constant="-30" id="LG1-D3-o8s"/>
+                            <constraint firstItem="fNr-am-d59" firstAttribute="top" secondItem="buA-Nc-0g3" secondAttribute="top" constant="20" id="QTk-73-mQa"/>
                             <constraint firstItem="YtO-O8-AUN" firstAttribute="top" secondItem="K8g-0x-4Sk" secondAttribute="top" constant="229" id="R7V-Ad-9q2"/>
                             <constraint firstItem="YtO-O8-AUN" firstAttribute="bottom" secondItem="K8g-0x-4Sk" secondAttribute="bottom" constant="-88" id="VQu-Wa-xdX"/>
                             <constraint firstItem="3ro-gy-wWJ" firstAttribute="top" secondItem="buA-Nc-0g3" secondAttribute="top" id="c9s-OF-9PZ"/>
                             <constraint firstItem="zWs-2d-5UM" firstAttribute="leading" secondItem="K8g-0x-4Sk" secondAttribute="leading" constant="30" id="efI-7y-Qat"/>
-                            <constraint firstItem="fNr-am-d59" firstAttribute="width" secondItem="buA-Nc-0g3" secondAttribute="width" id="o3H-Hd-r8d"/>
                             <constraint firstItem="3ro-gy-wWJ" firstAttribute="leading" secondItem="K8g-0x-4Sk" secondAttribute="leading" id="rcS-5T-OFh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K8g-0x-4Sk"/>
@@ -354,6 +350,7 @@
     </scenes>
     <resources>
         <image name="Oval" width="192" height="192"/>
+        <image name="char" width="500" height="325"/>
         <image name="lionfish" width="350" height="241"/>
         <image name="octopus" width="2271" height="1875"/>
         <image name="redfish" width="350" height="166"/>
