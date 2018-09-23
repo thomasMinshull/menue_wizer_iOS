@@ -9,6 +9,6 @@
 import Foundation
 
 struct Validation: Codable {
-    let valid: Bool
+    let authorized: Bool
 }
 
